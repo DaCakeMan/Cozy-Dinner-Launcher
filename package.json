@@ -1,7 +1,7 @@
 {
     "name": "CozyDinner-Launcher",
     "preductname": "Cozy Dinner Launcher",
-    "version": "0.1.1",
+    "version": "0.1.3",
     "description": "Cozy Dinner Modpack launcher.",
     "main": "src/app.js",
     "author": {

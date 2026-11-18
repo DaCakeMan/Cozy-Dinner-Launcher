@@ -9,7 +9,6 @@ const os = require('os');
 import { config, database } from './utils.js';
 const nodeFetch = require("node-fetch");
 
-
 class Splash {
     constructor() {
         this.splash = document.querySelector(".splash");
@@ -30,9 +29,10 @@ class Splash {
 
     async startAnimation() {
         let splashes = [
-            { "message": "Je... vie...", "author": "Luuxis" },
-            { "message": "Salut je suis du code.", "author": "Luuxis" },
-            { "message": "Linux n'est pas un os, mais un kernel.", "author": "Luuxis" }
+            { "message": "Eating spaghettis...", "author": "Some Random Dude" },
+            { "message": "Boiling the soup...", "author": "Gordon Ramsay" },
+            { "message": "Cooking the meal...", "author": "Philippe Etchebest" },
+            { "message": "IT'S TIMEEEEEEE!", "author": "Maria²" },
         ];
         let splash = splashes[Math.floor(Math.random() * splashes.length)];
         this.splashMessage.textContent = splash.message;
@@ -46,8 +46,9 @@ class Splash {
         this.splashMessage.classList.add("opacity");
         this.splashAuthor.classList.add("opacity");
         this.message.classList.add("opacity");
-        await sleep(1000);
-        this.checkUpdate();
+        await sleep(2000);
+        if (process.env.NODE_ENV === 'dev') this.startLauncher();
+        else this.checkUpdate();
     }
 
     async checkUpdate() {
@@ -161,4 +162,5 @@ document.addEventListener("keydown", (e) => {
         ipcRenderer.send("update-window-dev-tools");
     }
 })
+
 new Splash();

@@ -229,7 +229,7 @@ class Settings {
             await this.db.updateData('configClient', configClient);
         })
     }
-
+    
     async launcher() {
         let configClient = await this.db.readData('configClient');
 
@@ -269,8 +269,8 @@ class Settings {
                 activeTheme?.classList.remove('active-theme');
 
                 if (e.target.classList.contains('theme-btn-auto')) {
-                    setBackground();
-                    theme = "auto";
+                    setBackground(true);
+                    theme = "dark";
                     e.target.classList.add('active-theme');
                 } else if (e.target.classList.contains('theme-btn-sombre')) {
                     setBackground(true);

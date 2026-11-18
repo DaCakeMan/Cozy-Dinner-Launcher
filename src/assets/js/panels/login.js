@@ -11,6 +11,9 @@ class Login {
     static id = "login";
     async init(config) {
         this.config = config;
+
+        console.log(config);
+        
         this.db = new database();
 
         if (typeof this.config.online == 'boolean') {

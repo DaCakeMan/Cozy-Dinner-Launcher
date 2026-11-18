@@ -21,7 +21,7 @@ class Launcher {
         this.initLog();
         console.log('Initializing Launcher...');
         this.shortcut()
-        await setBackground()
+        await setBackground(true)
         this.initFrame();
         this.config = await config.GetConfig().then(res => res).catch(err => err);
         if (await this.config.error) return this.errorConnect()

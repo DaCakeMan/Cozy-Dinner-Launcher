@@ -21,6 +21,7 @@ async function setBackground(theme) {
         let configClient = await databaseLauncher.readData('configClient');
         theme = configClient?.launcher_config?.theme || "auto"
         theme = await ipcRenderer.invoke('is-dark-theme', theme).then(res => res)
+        console.log(theme);
     }
     let background
     let body = document.body;

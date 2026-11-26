@@ -1,8 +1,8 @@
 {
-    "name": "CozyDinner-Launcher",
-    "preductname": "Cozy Dinner Launcher",
-    "version": "0.1.3",
-    "description": "Cozy Dinner Modpack launcher.",
+    "name": "Snowy-Delight-Launcher",
+    "preductname": "Snowy Delight Launcher",
+    "version": "0.1.4",
+    "description": "A launcher for The Snowy Delight event.",
     "main": "src/app.js",
     "author": {
         "name": "DaCakeMan",

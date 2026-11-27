@@ -1,7 +1,7 @@
 {
     "name": "Snowy-Delight-Launcher",
     "preductname": "Snowy Delight Launcher",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "A launcher for The Snowy Delight event.",
     "main": "src/app.js",
     "author": {
@@ -39,6 +39,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/DaCakeMan/Cozy-Dinner-Launcher"
+        "url": "git+https://github.com/DaCakeMan/Snowy-Delight-Launcher"
     }
 }
